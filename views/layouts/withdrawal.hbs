@@ -1,0 +1,16 @@
+{{> header}}
+
+<h2>Withdrawal</h2>
+<p>Account Number: {{accountNumber}}</p>
+<form action="/withdrawal" method="post">
+    <label>Enter Withdrawal Amount:
+        <input type="text" name="amount">
+    </label>
+    <br>
+    <button type="submit">Withdraw and Return</button>
+</form>
+<a href="/banking">Cancel and Return</a>
+</div>
+</body>
+
+</html>

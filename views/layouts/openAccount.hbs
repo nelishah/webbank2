@@ -1,0 +1,24 @@
+{{> header}}
+
+<h2>Open an Account</h2>
+<form action="/openAccount" method="post">
+    <label>
+        <input type="radio" name="accountType" value="Chequing" onclick="enableSubmit()"> Chequing
+    </label>
+    <label>
+        <input type="radio" name="accountType" value="Savings" onclick="enableSubmit()"> Savings
+    </label>
+    <br>
+    <button type="submit" id="submitButton" disabled>Open Account</button>
+</form>
+<a href="/banking">Cancel and Return</a>
+
+<script>
+    function enableSubmit() {
+        document.getElementById('submitButton').disabled = false;
+    }
+</script>
+</div>
+</body>
+
+</html>
